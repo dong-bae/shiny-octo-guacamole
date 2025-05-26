@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>컴포즈 커피 마감 체크리스트</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f3f4f6;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+      color: #374151;
+    }
+    h3 {
+      margin-top: 30px;
+      color: #4b5563;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 5px;
+    }
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      margin: 10px 0;
+    }
+    .checklist-item input {
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+    button {
+      margin-top: 30px;
+      width: 100%;
+      padding: 14px;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4338ca;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 15px;
+      }
+      button {
+        font-size: 15px;
+        padding: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>컴포즈 커피 마감 체크리스트</h1>
+    <form id="checklist-form">
+      <h3>🕗 마감</h3>
+      <div class="checklist-item"><input type="checkbox" id="1"><label for="1">와플기계 청소</label></div>
+      <div class="checklist-item"><input type="checkbox" id="2"><label for="2">와플기계 옆 새 쟁반으로 교체</label></div>
+      <div class="checklist-item"><input type="checkbox" id="3"><label for="3">파우더 쟁반 교체</label></div>
+      <div class="checklist-item"><input type="checkbox" id="4"><label for="4">바 닦기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="5"><label for="5">냉장고 틀 닦기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="6"><label for="6">베이스/휘핑/파우더 등 채우기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="7"><label for="7">싱크대 청소, 물때 닦기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="8"><label for="8">수저통 설거지</label></div>
+      <div class="checklist-item"><input type="checkbox" id="9"><label for="9">쓴 기구 설거지</label></div>
+      <div class="checklist-item"><input type="checkbox" id="10"><label for="10">커피 옆 시럽 정리, 설탕시럽만 남기기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="11"><label for="11">파우더 스푼 씻고 커피기계 위에 말리기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="12"><label for="12">얼음스쿱 씻기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="13"><label for="13">시럽 펌프/뚜껑 씻기 (펌프는 통에)</label></div>
+      <div class="checklist-item"><input type="checkbox" id="14"><label for="14">8시에 1구 마감</label></div>
+
+      <h3>🕘 9시 전까지</h3>
+      <div class="checklist-item"><input type="checkbox" id="15"><label for="15">시럽 소스 뚜껑 씻기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="16"><label for="16">시럽 마감</label></div>
+      <div class="checklist-item"><input type="checkbox" id="17"><label for="17">커피기계 위 닦기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="18"><label for="18">스팀기 왼쪽 마감</label></div>
+      <div class="checklist-item"><input type="checkbox" id="19"><label for="19">커피 밑 판 세척 및 물로 흘려보내기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="20"><label for="20">배수구 마감</label></div>
+      <div class="checklist-item"><input type="checkbox" id="21"><label for="21">블렌더 분리 후 세척</label></div>
+      <div class="checklist-item"><input type="checkbox" id="22"><label for="22">컵홀더, 빨대 채워놓기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="23"><label for="23">정수기 받침대 씻기</label></div>
+
+      <h3>🕤 9시 45분 이후</h3>
+      <div class="checklist-item"><input type="checkbox" id="24"><label for="24">샷 한잔 뽑아 냉장고에</label></div>
+      <div class="checklist-item"><input type="checkbox" id="25"><label for="25">커피머신 2, 3구 마감</label></div>
+      <div class="checklist-item"><input type="checkbox" id="26"><label for="26">오른쪽 스팀기 마감 (약품, 얼음, 물 헹굼)</label></div>
+      <div class="checklist-item"><input type="checkbox" id="27"><label for="27">메두사 씻기 (물만 사용)</label></div>
+      <div class="checklist-item"><input type="checkbox" id="28"><label for="28">커피머신 튄 자국 닦기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="29"><label for="29">그라인더 주변 가루 정리</label></div>
+      <div class="checklist-item"><input type="checkbox" id="30"><label for="30">소스 냉장고 넣기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="31"><label for="31">행주 세척 (퐁퐁/약품 사용)</label></div>
+      <div class="checklist-item"><input type="checkbox" id="32"><label for="32">키오스크/포스기 마감</label></div>
+      <div class="checklist-item"><input type="checkbox" id="33"><label for="33">쓰레기통 비우기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="34"><label for="34">메뉴판/TV 끄기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="35"><label for="35">붓 물로 헹구기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="36"><label for="36">원두 통에 옮기기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="37"><label for="37">주차금지판 옮기기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="38"><label for="38">광고판 넣기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="39"><label for="39">원두기계 전원 끄고 닦기</label></div>
+
+      <h3>☕ 커피머신 마감</h3>
+      <div class="checklist-item"><input type="checkbox" id="40"><label for="40">막힌 뚜껑 + 약품 → 5번 → 1번 버튼 3회 반복</label></div>
+      <div class="checklist-item"><input type="checkbox" id="41"><label for="41">내리는 컵, 고무 등 뜨거운 물/약품에 담그기</label></div>
+
+      <h3>📱 키오스크 마감</h3>
+      <div class="checklist-item"><input type="checkbox" id="42"><label for="42">종료 설정 → 마감 → 예 → 아니요 → 메인화면 종료</label></div>
+
+      <h3>💰 마감 정산</h3>
+      <div class="checklist-item"><input type="checkbox" id="43"><label for="43">날짜/돈통금액/매출총액/차액 포스트잇 작성</label></div>
+      <div class="checklist-item"><input type="checkbox" id="44"><label for="44">마감 리포트 출력 (관리자 9999)</label></div>
+      <div class="checklist-item"><input type="checkbox" id="45"><label for="45">백업 종료 누르기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="46"><label for="46">돈통금액 16만원 맞추기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="47"><label for="47">영수증들 사장님께 전달</label></div>
+      <div class="checklist-item"><input type="checkbox" id="48"><label for="48">다음날 주말이면 간판 불 켜놓기</label></div>
+      <div class="checklist-item"><input type="checkbox" id="49"><label for="49">창문 닫기</label></div>
+
+      <button type="button" onclick="checkCompletion()">✅ 마감 완료 확인</button>
+    </form>
+  </div>
+
+  <script>
+    function checkCompletion() {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+      if (allChecked) {
+        alert("🎉 마감 체크리스트가 모두 완료되었습니다!");
+      } else {
+        alert("⚠️ 아직 완료하지 않은 항목이 있습니다.");
+      }
+    }
+  </script>
+</body>
+</html>
